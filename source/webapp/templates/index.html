@@ -24,12 +24,11 @@
                     <p class="card-text">Статус записи: {{ entries.get_status_display }}</p>
                     <p class="card-text">{{ entries.description }}</p>
                     <p class="card-text">Запись создана: {{ entries.created_at }} | Отредактирована: {{ entries.updated_at }}</p>
-                    <a href="{% url 'entry_view' entries.pk %}" class="btn btn-primary">Подробнее</a>
                     <a href="{% url 'entry_update' entries.pk %}" class="btn btn-primary">Изменить</a>
                     <a href="{% url 'entry_delete' entries.pk %}" class="btn btn-primary">Удалить</a>
                 </div>
             </div>
         {% endfor %}
     </div>
-    <a href="{% url 'entry_create' %}" class="btn btn-primary btn-lg btn-block">Добавить товар</a>
+    <a href="{% url 'entry_create' %}" class="btn btn-primary btn-lg btn-block">Добавить отзыв</a>
 {% endblock %}
