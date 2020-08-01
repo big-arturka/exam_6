@@ -16,6 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from webapp.views import index_view, entry_create, entry_view, entry_update, entry_delete
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index_view, name='index'),
+    path('entry/add/', entry_create, name='entry_create'),
+    path('entry/<int:pk>/', entry_view, name='entry_view'),
+    path('entry/<int:pk>/edit/', entry_update, name='entry_update'),
+    path('entry/<int:pk>/delete/', entry_delete, name='entry_delete'),
 ]
