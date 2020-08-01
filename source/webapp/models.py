@@ -2,7 +2,6 @@ from django.db import models
 
 DEFAULT_STATUS = "active"
 ENTRY_STATUS = (
-    (DEFAULT_STATUS, "Активно"),
     ("active", "Активно"),
     ("blocked", "Заблокировано"),
 )
