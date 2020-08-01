@@ -5,7 +5,7 @@ from webapp.forms import EntryForm
 
 
 def index_view(request):
-    entry = Entry.objects.all()
+    entry = Entry.objects.filter(status='active').order_by('-created_at')
     return render(request, 'index.html', context={'entry': entry})
 
 
