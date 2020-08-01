@@ -3,7 +3,7 @@
 
 {% block menu %}
     <li class="nav-item active">
-        <a class="nav-link" href="{% url 'entry_create' %}">Добавить новый отзыв</a>
+        <a class="nav-link" href="#add_entry">Добавить новый отзыв</a>
     </li>
 {% endblock %}
 
@@ -11,6 +11,7 @@
     <div class="main_page">
         <h1 class="title">EntrieS</h1>
         {% include 'partial/form_search.html' %}
+        <a href="{% url 'entry_create' %}" class="btn btn-primary btn-lg btn-block">Добавить отзыв</a>
         {% for entries in entry %}
             <div class="card w-100">
                 <div class="card-body">
@@ -23,5 +24,9 @@
             </div>
         {% endfor %}
     </div>
-    <a href="{% url 'entry_create' %}" class="btn btn-primary btn-lg btn-block">Добавить отзыв</a>
+    <div class="form" id="add_entry">
+            <h1 class="title">Add-new-entrY</h1>
+            {% url 'entry_create' as action_url %}
+            {% include 'partial/form.html' with action_url=action_url form_method='post' button_text='Сохранить'%}
+        </div>
 {% endblock %}
