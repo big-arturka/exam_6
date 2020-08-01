@@ -1,0 +1,92 @@
+[
+{
+  "model": "webapp.entry",
+  "pk": 1,
+  "fields": {
+    "author": "\u0414\u0436\u043e\u043d",
+    "email": "Johndoe@mail.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. \r\nAd amet animi, debitis distinctio eaque eligendi eos fugiat fugit iure repudiandae?",
+    "status": "active",
+    "created_at": "2020-08-01T05:36:01.478Z",
+    "updated_at": "2020-08-01T05:36:01.478Z"
+  }
+},
+{
+  "model": "webapp.entry",
+  "pk": 2,
+  "fields": {
+    "author": "\u041c\u0430\u0440\u0438\u044f",
+    "email": "maria@maria.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. \r\nAd amet animi, debitis distinctio eaque eligendi eos fugiat fugit iure repudiandae?",
+    "status": "active",
+    "created_at": "2020-08-01T05:39:49.557Z",
+    "updated_at": "2020-08-01T05:39:49.557Z"
+  }
+},
+{
+  "model": "webapp.entry",
+  "pk": 3,
+  "fields": {
+    "author": "\u042d\u043d\u0434\u0440\u044e",
+    "email": "endry@endry.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet animi, debitis distinctio eaque eligendi eos fugiat fugit iure repudiandae?",
+    "status": "active",
+    "created_at": "2020-08-01T05:40:17.535Z",
+    "updated_at": "2020-08-01T05:40:17.535Z"
+  }
+},
+{
+  "model": "webapp.entry",
+  "pk": 4,
+  "fields": {
+    "author": "\u0410\u043d\u043d\u0430",
+    "email": "anna@mail.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet animi, debitis distinctio eaque eligendi eos fugiat fugit iure repudiandae?",
+    "status": "active",
+    "created_at": "2020-08-01T05:40:34.301Z",
+    "updated_at": "2020-08-01T05:40:34.301Z"
+  }
+},
+{
+  "model": "webapp.entry",
+  "pk": 5,
+  "fields": {
+    "author": "\u0421\u0435\u0440\u0433\u0435\u0439",
+    "email": "sergo@mail.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet animi, debitis distinctio eaque eligendi eos fugiat fugit iure repudiandae?",
+    "status": "blocked",
+    "created_at": "2020-08-01T05:40:57.962Z",
+    "updated_at": "2020-08-01T05:40:57.962Z"
+  }
+},
+{
+  "model": "webapp.entry",
+  "pk": 6,
+  "fields": {
+    "author": "\u0425\u0435\u0439\u043b\u0438",
+    "email": "hey@mail.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet animi, debitis distinctio eaque eligendi eos fugiat fugit iure repudiandae?",
+    "status": "blocked",
+    "created_at": "2020-08-01T05:41:30.080Z",
+    "updated_at": "2020-08-01T05:41:30.080Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$imKeVHdCDjNB$UCid98Il9fCwTgUi3PfkcdeLp8wCoqavoos1P3cDo1c=",
+    "last_login": "2020-08-01T05:28:58.952Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-08-01T04:18:03.388Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
