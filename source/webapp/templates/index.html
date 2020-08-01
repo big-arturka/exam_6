@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Shop-ON-homE{% endblock %}
+
+{% block menu %}
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'product_create' %}">Добавить новый продукт</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <div class="main_page">
+        <h1 class="title">Online Shop</h1>
+        <div class="search">
+            <form class="form-inline my-2 my-lg-0" method="post">
+                {% csrf_token %}
+                <input class="form-control mr-sm-2" name="search_item" type="search" placeholder="Введите название..." aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0 search-btn" type="submit">Поиск</button>
+            </form>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Фильтр по категории
+            </button>
+            <div class="dropdown-menu">
+                {% for eng_name, ru_name in categories %}
+                    <a class="dropdown-item" href="{% url 'category_view' eng_name %}">{{ ru_name }}</a>
+                {% endfor %}
+            </div>
+        </div>
+
+    {% include 'partial/partial_index.html' %}
+
+    </div>
+    <a href="{% url 'product_create' %}" class="btn btn-primary btn-lg btn-block">Добавить товар</a>
+{% endblock %}
