@@ -4,7 +4,6 @@
     {% include 'partial/form_field.html' with field=form.author %}
     {% include 'partial/form_field.html' with field=form.email %}
     {% include 'partial/form_field.html' with field=form.description %}
-    {% include 'partial/form_field.html' with field=form.status %}
 
 <input type="submit" class="btn btn-primary" value="{{ button_text|default:'Submit' }}"/>
 <a href="{% url 'index' %}" class="btn btn-primary" >Отмена</a>
