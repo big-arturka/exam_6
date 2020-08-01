@@ -20,9 +20,10 @@
         {% for entries in entry %}
             <div class="card w-100">
                 <div class="card-body">
-                    <h5 class="card-title">Guest Book</h5>
-                    <p class="card-text">{{ entries.author }} ({{ entries.email }})</p>
+                    <h3 class="card-title">{{ entries.author }} ({{ entries.email }})</h3>
+                    <p class="card-text">Статус записи: {{ entries.get_status_display }}</p>
                     <p class="card-text">{{ entries.description }}</p>
+                    <p class="card-text">Запись создана: {{ entries.created_at }} | Отредактирована: {{ entries.updated_at }}</p>
                     <a href="{% url 'entry_view' entries.pk %}" class="btn btn-primary">Подробнее</a>
                     <a href="{% url 'entry_update' entries.pk %}" class="btn btn-primary">Изменить</a>
                     <a href="{% url 'entry_delete' entries.pk %}" class="btn btn-primary">Удалить</a>
