@@ -11,7 +11,7 @@
     <div class="main_page">
         <h1 class="title">EntrieS</h1>
         {% include 'partial/form_search.html' %}
-        <a href="{% url 'entry_create' %}" class="btn btn-primary btn-lg btn-block">Добавить отзыв</a>
+        <a href="#add_entry" class="btn btn-primary btn-lg btn-block">Добавить отзыв</a>
         {% for entries in entry %}
             <div class="card w-100">
                 <div class="card-body">
