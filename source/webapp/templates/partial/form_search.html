@@ -1,0 +1,7 @@
+<div class="search">
+    <form class="form-inline my-2 my-lg-0" method="get">
+        {% csrf_token %}
+        <input class="form-control mr-sm-2" name="search_item" type="search" placeholder="Введите автора..." aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0 search-btn" type="submit">Поиск</button>
+    </form>
+</div>

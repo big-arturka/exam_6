@@ -1,11 +1,13 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from webapp.models import Entry, ENTRY_STATUS
+from webapp.models import Entry
 from django.http import HttpResponseNotAllowed
 from webapp.forms import EntryForm
 
 
 def index_view(request):
     entry = Entry.objects.filter(status='active').order_by('-created_at')
+    if request.GET.get('search_item'):
+        entry = Entry.objects.filter(status='active', author=request.GET.get('search_item')).order_by('-created_at')
     return render(request, 'index.html', context={'entry': entry})
 
 
